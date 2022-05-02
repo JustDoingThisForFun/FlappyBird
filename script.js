@@ -9,5 +9,7 @@ hole.addEventListener('animationiteration', () => {
 });
 
 setInterval(function() {
-    var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    var characterTop = 
+    parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+    characterTop.style.top = (characterTop + 3) + "px";
 }, 10);
